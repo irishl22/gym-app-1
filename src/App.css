@@ -1,33 +1,101 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgb(59, 61, 61);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 100px;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_body {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+/* FORM STYLING */
+
+/* DEFAULT FORM */
+.default-form {
+  width: 60%;
+  height: 100px;
+  background: rgba(37, 37, 66, 0.5);
+  margin: 50px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.default-form button {
+  margin: 10px;
+  height: 47px;
 }
+
+.form {
+  width: 60%;
+  height: 300px;
+  background: rgba(37, 37, 66, 0.5);
+  margin: 50px;
+  border-radius: 5px;
+  padding: 20px;
+ 
+}
+
+/* ADDED WORKOUT STYLING */
+.workout_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.workout {
+  width: 400px;
+  height: 250px;
+  background: #2B8484;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin: 15px 40px;
+  color: #fff;
+}
+
+.edit-delete-button button {
+  background: #3B2B60;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  padding: 10px;
+}
+
+.button_d {
+  margin-right: 10px;
+}
+
+button {
+  background: #2B8484;
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  padding: 10px;
+  color: #fff; 
+}
+
+
